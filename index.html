@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arthur Reis · Ciência da Computação</title>
+<meta name="description" content="Portfólio de Arthur Reis Batista da Silva, estudante de Ciência da Computação na FIAP. Projetos em Python, Java, IA e infraestrutura.">
+<meta name="author" content="Arthur Reis Batista da Silva">
+<meta property="og:title" content="Arthur Reis · Ciência da Computação">
+<meta property="og:description" content="Portfólio: backend, dados/IA e infraestrutura. Python, Java, FastAPI, scikit-learn, Linux.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230d1117'/><text y='72' x='16' font-size='58' font-family='monospace' fill='%2339d353'>&gt;_</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main"><span data-lang="pt">Pular para o conteúdo</span><span data-lang="en">Skip to content</span></a>
+
+<header class="topbar">
+  <nav class="nav" aria-label="Principal">
+    <a class="nav__brand" href="#top">
+      <span class="nav__prompt">~/</span>arthur<span class="cursor-static">_</span>
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#sobre"><span data-lang="pt">sobre</span><span data-lang="en">about</span></a></li>
+      <li><a href="#projetos"><span data-lang="pt">projetos</span><span data-lang="en">projects</span></a></li>
+      <li><a href="#trajetoria"><span data-lang="pt">trajetória</span><span data-lang="en">timeline</span></a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#cursos"><span data-lang="pt">cursos</span><span data-lang="en">courses</span></a></li>
+      <li><a href="#contato"><span data-lang="pt">contato</span><span data-lang="en">contact</span></a></li>
+      <li class="nav__lang">
+        <button id="langToggle" type="button" aria-label="Switch to English" title="Switch language">
+          <span data-lang="pt">EN</span><span data-lang="en">PT</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+
+    <div class="hero__text">
+      <p class="hero__kicker">
+        <span data-lang="pt">São Paulo, Brasil · disponível para estágio</span>
+        <span data-lang="en">São Paulo, Brazil · available for internships</span>
+      </p>
+
+      <h1 class="hero__name">Arthur Reis</h1>
+
+      <p class="hero__role">
+        <span class="prompt">$</span>
+        <span id="typed" class="typed"></span><span class="caret" aria-hidden="true"></span>
+      </p>
+
+      <p class="hero__bio">
+        <span data-lang="pt">Estudante de Ciência da Computação na FIAP, atualmente no 2º ano.
+        Desenvolvo soluções aplicadas a problemas reais, que vão de um modelo de machine learning
+        para previsão do momento de corte da vegetação no Rodoanel até firmware em Raspberry Pi
+        para monitoramento assistivo. Minha atuação é voltada a backend, dados e infraestrutura.</span>
+        <span data-lang="en">Computer Science student at FIAP, currently in my second year.
+        I develop solutions for real problems, ranging from a machine learning model that predicts
+        when roadside vegetation on a São Paulo highway requires cutting to Raspberry Pi firmware for
+        assistive monitoring. My focus is on backend, data and infrastructure.</span>
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#projetos">
+          <span data-lang="pt">Ver projetos</span><span data-lang="en">See projects</span>
+        </a>
+        <a class="btn" href="assets/cv/Arthur-Reis-Batista-da-Silva-CV.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+          <span data-lang="pt">Baixar currículo</span><span data-lang="en">Download CV</span>
+        </a>
+      </div>
+
+      <ul class="hero__links">
+        <li><a href="https://github.com/ArthurReisBS" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/arthur-reis-4a0253310/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path fill="currentColor" stroke="none" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn</a></li>
+        <li><a href="mailto:arthurreisbatsil@gmail.com">
+          <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+          E-mail</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <a class="scroll-hint" href="#sobre" aria-label="Rolar para baixo"><span></span></a>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section class="section" id="sobre">
+  <h2 class="section__title"><span class="section__num">01.</span>
+    <span data-lang="pt">Sobre</span><span data-lang="en">About</span>
+  </h2>
+
+  <div class="about">
+    <div class="about__text">
+      <p>
+        <span data-lang="pt">Tenho 19 anos e resido em São Paulo. Iniciei minha formação em TI no curso
+        técnico do Senac e curso atualmente Ciência da Computação na FIAP, com conclusão prevista
+        para 2028. Paralelamente, atuo como Jovem Aprendiz na <strong>Boston Scientific</strong>,
+        na área de Facilities, prestando suporte a demandas de infraestrutura.</span>
+        <span data-lang="en">I am 19 years old and based in São Paulo. I began my training in IT through a
+        technical degree at Senac and am currently studying Computer Science at FIAP, graduating in
+        2028. In parallel, I work as a Young Apprentice at <strong>Boston Scientific</strong>, in
+        Facilities, providing support for infrastructure demands.</span>
+      </p>
+      <p>
+        <span data-lang="pt">Meu principal interesse está em backend, dados e inteligência artificial
+        aplicada. O <a href="#ecotrack">EcoTrack</a>, projeto mais completo que desenvolvi, reúne
+        essas três frentes: uma API em FastAPI que disponibiliza um modelo Random Forest treinado
+        a partir de dados climáticos públicos, acompanhada de um painel operacional que representa
+        o Rodoanel célula a célula. Tenho ainda experiência prática com hardware, por meio de
+        Raspberry Pi e Arduino, e utilizo Linux diariamente.</span>
+        <span data-lang="en">My main interests are backend development, data and applied artificial
+        intelligence. <a href="#ecotrack">EcoTrack</a>, the most complete project I have developed,
+        combines all three: a FastAPI service delivering a Random Forest model trained on public
+        climate data, together with an operations dashboard that represents the highway cell by cell.
+        I also have hands-on experience with hardware, through Raspberry Pi and Arduino, and I use
+        Linux on a daily basis.</span>
+      </p>
+      <p>
+        <span data-lang="pt">Busco uma oportunidade de <strong>estágio ou posição júnior</strong> nas
+        áreas de desenvolvimento backend, dados e inteligência artificial, infraestrutura ou
+        segurança da informação.</span>
+        <span data-lang="en">I am seeking an <strong>internship or junior position</strong> in backend
+        development, data and artificial intelligence, infrastructure or information security.</span>
+      </p>
+    </div>
+
+    <dl class="facts">
+      <div><dt data-lang="pt">Formação</dt><dt data-lang="en">Education</dt>
+           <dd>FIAP · <span data-lang="pt">Ciência da Computação</span><span data-lang="en">Computer Science</span></dd></div>
+      <div><dt data-lang="pt">Período</dt><dt data-lang="en">Year</dt>
+           <dd data-lang="pt">2º ano · conclusão em 2028</dd><dd data-lang="en">2nd year · class of 2028</dd></div>
+      <div><dt data-lang="pt">Local</dt><dt data-lang="en">Location</dt>
+           <dd data-lang="pt">São Paulo, SP</dd><dd data-lang="en">São Paulo, Brazil</dd></div>
+      <div><dt data-lang="pt">Idiomas</dt><dt data-lang="en">Languages</dt>
+           <dd data-lang="pt">Português nativo · Inglês avançado</dd>
+           <dd data-lang="en">Portuguese native · Advanced English</dd></div>
+      <div><dt data-lang="pt">Foco</dt><dt data-lang="en">Focus</dt>
+           <dd data-lang="pt">Backend · Dados/IA · Infra</dd><dd data-lang="en">Backend · Data/AI · Infra</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ PROJETOS ============ -->
+<section class="section" id="projetos">
+  <h2 class="section__title"><span class="section__num">02.</span>
+    <span data-lang="pt">Projetos</span><span data-lang="en">Projects</span>
+  </h2>
+
+  <!-- destaque -->
+  <article class="feature reveal" id="ecotrack">
+    <div class="feature__head">
+      <span class="badge badge--accent" data-lang="pt">Projeto em destaque</span>
+      <span class="badge badge--accent" data-lang="en">Featured project</span>
+      <span class="badge" data-lang="pt">Challenge FIAP 2026 · CCR Motiva</span>
+      <span class="badge" data-lang="en">FIAP Challenge 2026 · CCR Motiva</span>
+    </div>
+
+    <h3 class="feature__title">EcoTrack</h3>
+    <p class="feature__sub">
+      <span data-lang="pt">Monitoramento preditivo da altura da grama no Rodoanel Mário Covas (SP-021)</span>
+      <span data-lang="en">Predictive grass height monitoring along the Mário Covas Ring Road (SP-021)</span>
+    </p>
+
+    <div class="feature__body">
+      <p>
+        <span data-lang="pt">O corte da vegetação nas margens da rodovia é executado por calendário, e não
+        conforme a necessidade real. O EcoTrack estima a altura da vegetação a partir de dados
+        climáticos e do histórico da região, orientando as equipes quanto a <em>onde</em> e
+        <em>quando</em> realizar o corte.</span>
+        <span data-lang="en">Roadside mowing is scheduled by calendar rather than by actual need. EcoTrack
+        estimates vegetation height from climate data and regional history, informing crews
+        <em>where</em> and <em>when</em> cutting should be carried out.</span>
+      </p>
+      <ul class="bullets">
+        <li><span data-lang="pt"><strong>Modelo:</strong> Random Forest (scikit-learn) treinado sobre dataset
+            sintético gerado a partir de um modelo agronômico documentado.</span>
+            <span data-lang="en"><strong>Model:</strong> Random Forest (scikit-learn) trained on a synthetic
+            dataset generated from a documented agronomic model.</span></li>
+        <li><span data-lang="pt"><strong>Dados:</strong> APIs públicas Open-Meteo e NASA POWER, com fallback
+            climático por variável (CSV de climatologia) para preservar a disponibilidade do serviço.</span>
+            <span data-lang="en"><strong>Data:</strong> public Open-Meteo and NASA POWER APIs, with a
+            per-variable climatology fallback (CSV) to preserve service availability.</span></li>
+        <li><span data-lang="pt"><strong>API:</strong> FastAPI com Swagger, e página de status dos serviços.</span>
+            <span data-lang="en"><strong>API:</strong> FastAPI with embedded Swagger and a service status page.</span></li>
+        <li><span data-lang="pt"><strong>Painel:</strong> HTML/CSS/JS puro, com mapa que percorre a rodovia em
+            células de aproximadamente 500 m e classifica cada trecho pela altura estimada.</span>
+            <span data-lang="en"><strong>Dashboard:</strong> vanilla HTML/CSS/JS map that covers the highway in
+            cells of approximately 500 m, classifying each stretch by estimated height.</span></li>
+      </ul>
+      <ul class="tags">
+        <li>Python</li><li>FastAPI</li><li>scikit-learn</li><li>Random Forest</li>
+        <li>Open-Meteo</li><li>NASA POWER</li><li>JavaScript</li>
+      </ul>
+      <p class="feature__links">
+        <a class="btn btn--primary" href="https://github.com/ArthurReisBS/EcoTrack" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          <span data-lang="pt">Ver repositório</span><span data-lang="en">View repository</span>
+        </a>
+      </p>
+    </div>
+  </article>
+
+  <!-- grid -->
+  <div class="cards">
+
+    <article class="card reveal">
+      <header class="card__head">
+        <span class="card__icon" aria-hidden="true">◈</span>
+        <h3>Betsy</h3>
+      </header>
+      <p class="card__badge"><span class="badge badge--soft" data-lang="pt">Apresentado no NEXT · FIAP</span><span class="badge badge--soft" data-lang="en">Showcased at NEXT · FIAP</span></p>
+      <p>
+        <span data-lang="pt">Firmware em Python executado em Raspberry Pi para monitoramento assistivo por
+        meio de sensores e áudio, com integração de inteligência artificial. O sistema atua também
+        como assistente de voz para o usuário.</span>
+        <span data-lang="en">Python firmware running on a Raspberry Pi for assistive monitoring through
+        sensors and audio, with artificial intelligence integration. The system also serves as a voice
+        assistant for the user.</span>
+      </p>
+      <ul class="tags"><li>Python</li><li>Raspberry Pi</li><li>IoT</li><li><span data-lang="pt">IA</span><span data-lang="en">AI</span></li></ul>
+      <p class="card__note" data-lang="pt">Código-fonte não publicado</p>
+      <p class="card__note" data-lang="en">Source not published</p>
+    </article>
+
+    <article class="card reveal">
+      <header class="card__head">
+        <span class="card__icon" aria-hidden="true">▲</span>
+        <h3>MOMENTUM</h3>
+      </header>
+      <p class="card__badge"><span class="badge badge--soft" data-lang="pt">Projeto pessoal</span><span class="badge badge--soft" data-lang="en">Personal project</span></p>
+      <p>
+        <span data-lang="pt">Aplicação web gamificada para acompanhamento de projetos pessoais, concebida
+        para pessoas neurodivergentes, com subtarefas curtas, pontuação por experiência, sequências de
+        progresso por projeto e limite de projetos ativos. Totalmente client-side, sem etapa de build e
+        sem servidor, com exportação e importação de dados em JSON.</span>
+        <span data-lang="en">A gamified web application for tracking personal projects, designed for
+        neurodivergent users, featuring short sub-tasks, experience points, per-project streaks and a
+        limit on active projects. Entirely client-side, with no build step and no server, and support
+        for JSON data export and import.</span>
+      </p>
+      <ul class="tags"><li>JavaScript</li><li>localStorage</li><li>HTML/CSS</li></ul>
+      <p class="card__links">
+        <a href="https://github.com/ArthurReisBS/MOMENTUM" target="_blank" rel="noopener">
+          <span data-lang="pt">repositório →</span><span data-lang="en">repository →</span></a>
+      </p>
+    </article>
+
+    <article class="card reveal">
+      <header class="card__head">
+        <span class="card__icon" aria-hidden="true">✦</span>
+        <h3>GS2 PAAI</h3>
+      </header>
+      <p class="card__badge"><span class="badge badge--soft">FIAP · 2025</span></p>
+      <p>
+        <span data-lang="pt">Notebook Jupyter dedicado à exploração da IA generativa Gemini 1.5, abordando
+        engenharia de prompt e integração via API.</span>
+        <span data-lang="en">Jupyter notebook dedicated to exploring Gemini 1.5 generative AI, covering
+        prompt engineering and API integration.</span>
+      </p>
+      <ul class="tags"><li>Python</li><li>Jupyter</li><li>Gemini 1.5</li></ul>
+      <p class="card__links">
+        <a href="https://github.com/ArthurReisBS/GS2PAAI" target="_blank" rel="noopener">
+          <span data-lang="pt">repositório →</span><span data-lang="en">repository →</span></a>
+      </p>
+    </article>
+
+    <article class="card reveal">
+      <header class="card__head">
+        <span class="card__icon" aria-hidden="true">☕</span>
+        <h3>SaúdeNaVeia</h3>
+      </header>
+      <p class="card__badge"><span class="badge badge--soft">Java · FIAP</span></p>
+      <p>
+        <span data-lang="pt">Aplicação Java voltada à área da saúde, desenvolvida em equipe, com modelagem
+        orientada a objetos e persistência em banco de dados SQL.</span>
+        <span data-lang="en">Java application for the healthcare sector, developed as a team project, with
+        object-oriented modeling and SQL database persistence.</span>
+      </p>
+      <ul class="tags"><li>Java</li><li>SQL</li><li><span data-lang="pt">POO</span><span data-lang="en">OOP</span></li></ul>
+      <p class="card__links">
+        <a href="https://github.com/ArthurReisBS/SaudeNaVeia" target="_blank" rel="noopener">
+          <span data-lang="pt">repositório →</span><span data-lang="en">repository →</span></a>
+      </p>
+    </article>
+
+    <article class="card reveal">
+      <header class="card__head">
+        <span class="card__icon" aria-hidden="true">⌘</span>
+        <h3><span data-lang="pt">Estruturas de Dados em C</span><span data-lang="en">Data Structures in C</span></h3>
+      </header>
+      <p class="card__badge"><span class="badge badge--soft">C · FIAP</span></p>
+      <p>
+        <span data-lang="pt">Sistema de menu em C para processamento de lógica matemática e tratamento de
+        strings e vetores. Fui responsável pelo algoritmo de busca e verificação de substrings.</span>
+        <span data-lang="en">Menu system in C for processing mathematical logic and handling strings and
+        arrays. I was responsible for the search and substring verification algorithm.</span>
+      </p>
+      <ul class="tags"><li>C</li><li><span data-lang="pt">Algoritmos</span><span data-lang="en">Algorithms</span></li><li>Strings</li></ul>
+      <p class="card__links">
+        <a href="https://github.com/ArthurReisBS/GSDSA1sem" target="_blank" rel="noopener">GSDSA1sem →</a>
+        <a href="https://github.com/ArthurReisBS/DAS_FIAP_checkpoint2" target="_blank" rel="noopener">checkpoint2 →</a>
+      </p>
+    </article>
+
+    <article class="card reveal">
+      <header class="card__head">
+        <span class="card__icon" aria-hidden="true">⬡</span>
+        <h3><span data-lang="pt">POO em Java</span><span data-lang="en">OOP in Java</span></h3>
+      </header>
+      <p class="card__badge"><span class="badge badge--soft">Java · 2026</span></p>
+      <p>
+        <span data-lang="pt">Exercícios e avaliações de Programação Orientada a Objetos, abrangendo herança,
+        interfaces, coleções e tratamento de exceções.</span>
+        <span data-lang="en">Object-Oriented Programming exercises and assessments, covering inheritance,
+        interfaces, collections and exception handling.</span>
+      </p>
+      <ul class="tags"><li>Java</li><li><span data-lang="pt">POO</span><span data-lang="en">OOP</span></li></ul>
+      <p class="card__links">
+        <a href="https://github.com/ArthurReisBS/fiap-poo" target="_blank" rel="noopener">fiap-poo →</a>
+        <a href="https://github.com/ArthurReisBS/CP02POO2026" target="_blank" rel="noopener">CP02POO2026 →</a>
+      </p>
+    </article>
+
+  </div>
+
+  <p class="section__more">
+    <a href="https://github.com/ArthurReisBS?tab=repositories" target="_blank" rel="noopener">
+      <span data-lang="pt">ver todos os repositórios no GitHub →</span>
+      <span data-lang="en">see all repositories on GitHub →</span>
+    </a>
+  </p>
+</section>
+
+<!-- ============ TRAJETÓRIA ============ -->
+<section class="section" id="trajetoria">
+  <h2 class="section__title"><span class="section__num">03.</span>
+    <span data-lang="pt">Trajetória</span><span data-lang="en">Timeline</span>
+  </h2>
+
+  <ol class="timeline">
+    <li class="timeline__item reveal">
+      <span class="timeline__when"><span data-lang="pt">desde 2026</span><span data-lang="en">since 2026</span></span>
+      <h3 class="timeline__role"><span data-lang="pt">Jovem Aprendiz, Facilities</span><span data-lang="en">Young Apprentice, Facilities</span></h3>
+      <p class="timeline__org">Boston Scientific</p>
+      <p>
+        <span data-lang="pt">Multinacional do setor de dispositivos médicos. Atuo no suporte e na resolução
+        de problemas de infraestrutura predial, com responsabilidade sobre chamados, relacionamento com
+        fornecedores e rotinas de manutenção.</span>
+        <span data-lang="en">Multinational company in the medical device sector. I provide support and
+        troubleshoot building infrastructure issues, with responsibility for tickets, vendor
+        relationships and maintenance routines.</span>
+      </p>
+    </li>
+
+    <li class="timeline__item reveal">
+      <span class="timeline__when">2025 a 2028</span>
+      <h3 class="timeline__role"><span data-lang="pt">Bacharelado em Ciência da Computação</span><span data-lang="en">BSc in Computer Science</span></h3>
+      <p class="timeline__org">FIAP</p>
+      <p>
+        <span data-lang="pt">Atualmente no 2º ano, em período noturno. O curso abrange estruturas de dados,
+        programação orientada a objetos, banco de dados, redes e inteligência artificial aplicada.
+        Participo dos Challenges semestrais realizados em parceria com empresas.</span>
+        <span data-lang="en">Currently in my second year, attending evening classes. The programme covers
+        data structures, object-oriented programming, databases, networking and applied artificial
+        intelligence. I take part in the semester Challenges run in partnership with companies.</span>
+      </p>
+    </li>
+
+    <li class="timeline__item reveal">
+      <span class="timeline__when"><span data-lang="pt">Concluído</span><span data-lang="en">Completed</span></span>
+      <h3 class="timeline__role"><span data-lang="pt">Ensino Médio Técnico em TI</span><span data-lang="en">Technical High School in IT</span></h3>
+      <p class="timeline__org">Senac</p>
+      <p>
+        <span data-lang="pt">Primeiro contato formal com programação, redes e suporte técnico, base sobre a
+        qual construí minha formação posterior.</span>
+        <span data-lang="en">First formal exposure to programming, networking and technical support, which
+        laid the foundation for my subsequent training.</span>
+      </p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <h2 class="section__title"><span class="section__num">04.</span>Skills</h2>
+
+  <div class="terminal reveal">
+    <div class="terminal__bar" aria-hidden="true">
+      <span class="terminal__dot"></span><span class="terminal__dot"></span><span class="terminal__dot"></span>
+      <span class="terminal__file">arthur@portfolio: ~/skills</span>
+    </div>
+    <div class="terminal__body">
+      <p class="terminal__cmd"><span class="prompt">$</span> cat skills.txt</p>
+
+      <div class="skills">
+        <div class="skills__group">
+          <h3><span data-lang="pt">Linguagens</span><span data-lang="en">Languages</span></h3>
+	  <ul><li>Python</li><li>Java</li><li>JavaScript</li><li>C / C++</li><li>SQL</li><li>Rust</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3>Backend</h3>
+          <ul><li>FastAPI</li><li>Spring Boot</li><li>REST</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3><span data-lang="pt">Dados &amp; IA</span><span data-lang="en">Data &amp; AI</span></h3>
+          <ul><li>scikit-learn</li><li>Random Forest</li><li><span data-lang="pt">Redes neurais (básico)</span><span data-lang="en">Neural networks (basic)</span></li><li>Jupyter</li><li>Gemini API</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3><span data-lang="pt">Infra &amp; Ferramentas</span><span data-lang="en">Infra &amp; Tools</span></h3>
+          <ul><li>Linux (Ubuntu)</li><li><span data-lang="pt">Docker (básico)</span><span data-lang="en">Docker (basic)</span></li><li>Git / GitHub</li><li><span data-lang="pt">Redes Cisco</span><span data-lang="en">Cisco networking</span></li></ul>
+        </div>
+        <div class="skills__group">
+          <h3>Hardware / IoT</h3>
+          <ul><li>Raspberry Pi</li><li>Arduino</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3>Frontend</h3>
+          <ul><li>React</li><li>React Native</li><li>Vanilla JS</li></ul>
+        </div>
+      </div>
+
+      <p class="terminal__cmd"><span class="prompt">$</span> cat soft-skills.txt</p>
+      <p class="terminal__out">
+        <span data-lang="pt">trabalho em equipe · comunicação técnica · aprendizado contínuo · adaptabilidade · pensamento analítico</span>
+        <span data-lang="en">teamwork · technical communication · continuous learning · adaptability · analytical thinking</span>
+      </p>
+      <p class="terminal__cmd"><span class="prompt">$</span> <span class="caret caret--static" aria-hidden="true"></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURSOS ============ -->
+<section class="section" id="cursos">
+  <h2 class="section__title"><span class="section__num">05.</span>
+    <span data-lang="pt">Cursos e certificados</span><span data-lang="en">Courses &amp; certificates</span>
+  </h2>
+
+  <div class="courses">
+    <article class="course reveal">
+      <h3>Alura</h3>
+      <ul>
+        <li><span data-lang="pt">Carreira Cloud Security</span><span data-lang="en">Cloud Security track</span></li>
+        <li><span data-lang="pt">Cibersegurança</span><span data-lang="en">Cybersecurity</span></li>
+        <li><span data-lang="pt">Arquitetura de computadores</span><span data-lang="en">Computer architecture</span></li>
+        <li><span data-lang="pt">Linux I: terminal</span><span data-lang="en">Linux I: the terminal</span></li>
+        <li><span data-lang="pt">JavaScript: explorando a linguagem</span><span data-lang="en">JavaScript: exploring the language</span></li>
+        <li><span data-lang="pt">Lógica de programação (I e II)</span><span data-lang="en">Programming logic (I &amp; II)</span></li>
+        <li><span data-lang="pt">HTML5 e CSS3 (4 módulos)</span><span data-lang="en">HTML5 &amp; CSS3 (4 modules)</span></li>
+        <li><span data-lang="pt">Linguagem C</span><span data-lang="en">C language</span></li>
+      </ul>
+    </article>
+
+    <article class="course reveal">
+      <h3>Cisco</h3>
+      <ul>
+        <li>Cybersecurity Essentials</li>
+        <li><span data-lang="pt">Fundamentos de redes</span><span data-lang="en">Networking fundamentals</span></li>
+      </ul>
+    </article>
+
+    <article class="course reveal">
+      <h3><span data-lang="pt">Fundação Bradesco</span><span data-lang="en">Bradesco Foundation</span></h3>
+      <ul>
+        <li><span data-lang="pt">Segurança da Tecnologia da Informação</span><span data-lang="en">Information Technology Security</span></li>
+        <li>LGPD</li>
+      </ul>
+    </article>
+
+    <article class="course reveal">
+      <h3><span data-lang="pt">NanoCourses FIAP</span><span data-lang="en">FIAP NanoCourses</span></h3>
+      <ul>
+        <li><span data-lang="pt">Formação Social e Sustentabilidade</span><span data-lang="en">Social Formation &amp; Sustainability</span></li>
+        <li>Biohacking</li>
+      </ul>
+    </article>
+  </div>
+
+  <p class="section__more">
+    <a href="https://www.linkedin.com/in/arthur-reis-4a0253310/details/certifications/" target="_blank" rel="noopener">
+      <span data-lang="pt">lista completa no LinkedIn →</span><span data-lang="en">full list on LinkedIn →</span>
+    </a>
+  </p>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="section section--contact" id="contato">
+  <h2 class="section__title"><span class="section__num">06.</span>
+    <span data-lang="pt">Contato</span><span data-lang="en">Contact</span>
+  </h2>
+
+  <p class="contact__lead">
+    <span data-lang="pt">Estou em busca de estágio ou posição júnior. Coloco-me à disposição para tratar
+    de oportunidades, esclarecer dúvidas a respeito dos projetos apresentados ou conversar sobre
+    assuntos tech.</span>
+    <span data-lang="en">I am seeking an internship or junior position. I am available to discuss
+    opportunities, answer questions about any of the projects presented here, or exchange ideas on
+    technology.</span>
+  </p>
+
+  <div class="contact__grid">
+    <a class="contact__card" href="mailto:arthurreisbatsil@gmail.com">
+      <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+      <span class="contact__label">E-mail</span>
+      <span class="contact__value">arthurreisbatsil@gmail.com</span>
+    </a>
+    <a class="contact__card" href="https://github.com/ArthurReisBS" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+      <span class="contact__label">GitHub</span>
+      <span class="contact__value">@ArthurReisBS</span>
+    </a>
+    <a class="contact__card" href="https://www.linkedin.com/in/arthur-reis-4a0253310/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path fill="currentColor" stroke="none" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+      <span class="contact__label">LinkedIn</span>
+      <span class="contact__value">Arthur Reis</span>
+    </a>
+    <a class="contact__card" href="assets/cv/Arthur-Reis-Batista-da-Silva-CV.pdf" download>
+      <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+      <span class="contact__label" data-lang="pt">Currículo</span><span class="contact__label" data-lang="en">Résumé</span>
+      <span class="contact__value">PDF</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p><span class="prompt">$</span> <span data-lang="pt">desenvolvido em HTML, CSS e JavaScript puro, sem frameworks</span><span data-lang="en">developed in vanilla HTML, CSS and JavaScript, without frameworks</span></p>
+  <p class="footer__meta">© <span id="year">2026</span> Arthur Reis Batista da Silva</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
